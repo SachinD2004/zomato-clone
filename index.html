@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order food in online Bengaluru-Zomato</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="header">
+        <div class="nav">
+            <img src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png" alt="no" height="30px" width="130px">
+            <div class="search">
+                <span class="inputgrouptext">
+                    <i class="fa-solid fa-location-dot"></i><p>Bengaluru </p><i class="fa-solid fa-caret-down"></i>
+                </span><span class="line">|</span>
+                <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                <input type="text" placeholder="Search for restaurant ,cuisine or food">
+            </div>
+            <div class="anchor">
+                <a href="#">Log in</a>
+                <a href="#">Sign up</a>
+            </div>
+        </div>
+        
+    </div>
+    <div class="menu">
+        <div class="dinner"><img src="download.png" alt="" height="50px" width="50px"><i class="fa-solid fa-utensils"></i> <p style="color: #ef4f5f;">Dining Out</p> <div class="seperator"></div></div>
+        <div class="delivery"><img src="graycircle.png" alt=""><i class="fa-solid fa-motorcycle"></i><p>Delivery</p></div>
+        <div class="night"><img src="graycircle.png" alt=""><i class="fa-solid fa-champagne-glasses"></i><p>Night Life</p></div>
+    </div>
+    <div class="carouselcard">
+        <h2>Collections</h2>
+        <span class="span1">Explore curated lists of top restaurants, cafes, pubs, and bars in Bengaluru, based on trends</span>
+        <div class="carousellink">All collections in Bengaluru <i class="fa-solid fa-caret-right"></i></div>
+        <div class="cardwrap">
+                            <div class="card1 "><img  src="https://b.zmtcdn.com/data/pictures/chains/5/18569785/3032f2dc9b470ec99a0d8fe629781dcd.jpg?output-format=webp&fit=around|771.75:416.25&crop=771.75:416.25;*,*" alt="" height="300px" width="250px">
+                                <div class="cover"></div>
+                            <div class="title ">Premium coffee shops</div></div>
+                            <div class="card2 "><img  src="https://b.zmtcdn.com/data/pictures/9/21050819/3698774c6999be85c39ef6de3be7dda0.jpg?output-format=webp&fit=around|771.75:416.25&crop=771.75:416.25;*,*" alt="" height="300px" width="250px">
+                                <div class="cover"></div>
+                                <div class="title">Newly Opened Restaurant</div></div>
+                                <div class="card3 "><img  src="https://b.zmtcdn.com/data/pictures/8/51008/6c5bfcc42e696e3ed1fa1d3dc4b1e2f4.jpg?output-format=webp&fit=around|771.75:416.25&crop=771.75:416.25;*,*" alt="" height="300px" width="250px">
+                                    <div class="cover"></div>
+                                    <div class="title ">Best in Bangalore</div></div>
+                                    <div class="card4 "><img  src="https://b.zmtcdn.com/data/pictures/5/59865/819c0dc16487dddd549ba8111c6e92f8.jpg?output-format=webp&fit=around|771.75:416.25&crop=771.75:416.25;*,*" alt="" height="300px" width="250px">
+                                        <div class="cover"></div>
+                                        <div class="title ">Serene rooftop places</div></div>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="buttons"  class="d-flex">
+        <button type="button" class="d-flex">
+            <i class="fa-solid fa-sliders"></i>Filters
+        </button>
+        <button type="button"  class="d-flex">
+            <i class="fa-solid fa-coins"></i>Gold
+        </button>
+        <button type="button"  class="d-flex">
+            Rating:4.0+
+        </button>
+        <button type="button"  class="d-flex">
+            Outdoor seating
+        </button>
+        <button type="button"  class="d-flex">
+            Serves alcohol
+        </button>
+        <button type="button"  class="d-flex">
+            Open now 
+        </button>
+    </div>
+    <div class="offer-img"><img src="https://b.zmtcdn.com/data/o2_assets/da94405b04f6ae6bf64a4e2a01b1b5c11686563732.png" alt="" height="250px" width="1100"></div>
+    <div class="best-food"><p>Best Food in Bengaluru</p></div>
+    <div class="container mt-2">
+        <div class="row ms-5 ps-5 mt-5">
+            
+            <div class="col-md-3 ms-5">
+                <div class="card kard hover1">
+                    <img src="https://b.zmtcdn.com/data/pictures/9/18843699/fb66205bef846cabc8e0fcfdfabfaac5_featured_v2.jpg?output-format=webp" alt="">
+                    <div class="card-body">
+                        <div class="card-title">
+                            The Bier Library <button type="button" class="btn btn-sm btn-success">4.5</button>
+                        </div>
+                        <div class="card-text">
+                            American, Pizza, Europe.. <span class="price">₹1,800 for two</span>
+                            <div class="address"> Koramangala 6th Block, Bangalore</div>
+                            <span class="time"> Opens at 12noon</span> <span class="distance">5 km</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 ms-5 ps-2">
+                <div class="card kard hover1">
+                    <img src="https://b.zmtcdn.com/data/pictures/6/53566/b3f413969da569ddf3ef058c20bc385e_featured_v2.jpg?output-format=webp" alt="">
+                    <div class="card-body">
+                        <div class="card-title">
+                            No Limmits Lounge And Club <button type="button" class="btn btn-sm btn-success ms-1">3.8</button>
+                        </div>
+                        <div class="card-text">
+                            Chinese, Continental, N.. <span class="price">₹2,500 for two</span>
+                            <div class="address">Brigade Road, Bangalore</div>
+                            <span class="time">Opens at 11am</span> <span class="distance">1.8 km</span>
+                        </div>
+                    </div>
+                       
+                    
+                </div>
+            </div>
+            <div class="col-md-3 ms-5 ps-2">
+                <div class="card kard hover1">
+                    <img src="https://b.zmtcdn.com/data/pictures/9/20385689/164eaec271985f8c5639255084b1a5f2_featured_v2.jpg?output-format=webp" alt="" height="218px">
+                    <div class="card-body">
+                        <div class="card-title">
+                            Terrace By House Of Common.<button type="button" class="btn btn-sm btn-success ms-0">4.6</button>
+                        </div>
+                        <div class="card-text">
+                            Modern Indian, Continent..<span class="price">₹2,000 for two</span>
+                            <div class="address"> JP Nagar, Bangalore</div>
+                            <span class="time"> Opens at 10:30am</span> <span class="distance">6.4 km</span>
+                        </div>
+                    </div>
+                       
+                </div>
+            </div>
+        </div>
+          <!-- --------------------------2nd row-------------------------------- -->
+
+        <div class="row ms-5 ps-5 mt-5">
+            
+            <div class="col-md-3 ms-5">
+                <div class="card kard hover1">
+                    <img src="https://b.zmtcdn.com/data/pictures/8/20930988/adf955c0603df36911d6741e80a62858_featured_v2.jpg?output-format=webp" alt="" height="220px">
+                    <div class="card-body">
+                        <div class="card-title">
+                            Muro<button type="button" class="btn btn-sm btn-success" style="margin-left: 200px;" >4.1</button>
+                        </div>
+                        <div class="card-text">
+                            Thai, Cantonese<span class="price">₹3,000 for two</span>
+                            <div class="address">Church Street, Bangalore</div>
+                            <span class="time"> Opens at 12noon</span> <span class="distance">1 km</span>
+                        </div>
+                    </div>
+                       
+                </div>
+            </div>
+            <div class="col-md-3 ms-5 ps-2">
+                <div class="card kard hover1">
+                    <img src="https://b.zmtcdn.com/data/pictures/2/18580202/cae14add668c63e4d0a35ed6dc244ce5_featured_v2.jpg?output-format=webp" alt="" height="220px">
+                    <div class="card-body">
+                        <div class="card-title">
+                            1131 Bar + Kitchen By house  ..<button type="button" class="btn btn-sm btn-success ms-0">4.5</button>
+                        </div>
+                        <div class="card-text">
+                            inger Food, North Indian. <span class="price">₹2,200 for two</span>
+                            <div class="address"> Indiranagar, Bangalore</div>
+                            <span class="time"> Opens at 11am</span> <span class="distance">5.1 km</span>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="col-md-3 ms-5 ps-2">
+                <div class="card kard hover1">
+                    <img src="https://b.zmtcdn.com/data/pictures/9/20494049/82bd8edf1b05adf0cb92dedc7766e8cc_featured_v2.jpg?output-format=webp" alt="" height="218px">
+                    <div class="card-body">
+                        <div class="card-title">
+                            Maffei Kitchen<button type="button" class="btn btn-sm btn-success">4.7</button>
+                        </div>
+                        <div class="card-text">
+                            Lebanese, Greek, Moro.. <span class="price">₹1,700 for two</span>
+                            <div class="address"> Koramangala 5th Block, Bangalore</div>
+                            <span class="time"> Opens at 11:30am</span> <span class="distance">5.1 km</span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- ---------------------3rd row--------------------------- -->
+
+        <div class="row ms-5 ps-5 mt-5">
+            
+            <div class="col-md-3 ms-5">
+                <div class="card kard hover1">
+                    <img src="https://b.zmtcdn.com/data/pictures/7/20828407/3ccdce59b3ae5220d967025b5e1a5500_featured_v2.jpg?output-format=webp" alt="" height="220px">
+                    <div class="card-body">
+                        <div class="card-title">
+                            The Weekly Brewhouse & Kitc.<button type="button" class="btn btn-sm btn-success ms-0">4.5</button>
+                        </div>
+                        <div class="card-text">
+                            Continental, Bar Food, Chin<span class="price">₹1,500 for two</span>
+                            <div class="address"> Hosur Road, Bangalore</div>
+                            <span class="time"> Opens at 12noon</span> <span class="distance">4.4 km</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 ms-5 ps-2">
+                <div class="card kard hover1" >
+                    <img src="https://b.zmtcdn.com/data/pictures/8/20870648/98332918e8c449b4a29ed6cad1965f0d_featured_v2.jpg?output-format=webp" alt="" height="220px">
+                    <div class="card-body">
+                        <div class="card-title">
+                            The Bier Library <button type="button" class="btn btn-sm btn-success">4.3</button>
+                        </div>
+                        <div class="card-text">
+                            American, Pizza, Europe.. <span class="price">₹1,800 for two</span>
+                            <div class="address"> Koramangala 6th Block, Bangalore</div>
+                            <span class="time"> Opens at 12noon</span> <span class="distance">5 km</span>
+                        </div>
+                    </div>
+                       
+                    
+                </div>
+            </div>
+            <div class="col-md-3 ms-5 ps-2">
+                <div class="card kard hover1">
+                    <img src="https://b.zmtcdn.com/data/pictures/2/20343932/ff92662be57465f866eb1fb60855d2dc_featured_v2.jpg?output-format=webp" alt="" height="218px">
+                    <div class="card-body">
+                        <div class="card-title">
+                            Vyana Flavors Of Nature<button type="button" class="btn btn-sm btn-success ms-5">4.3</button>
+                        </div>
+                        <div class="card-text">
+                            American, Pizza, Europe.. <span class="price">₹1,800 for two</span>
+                            <div class="address">JP Nagar, Bangalore</div>
+                            <span class="time"> Opens at 12noon</span> <span class="distance">6.8 km</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- -----------------------------------------4th row---------------------------- -->
+        <div class="row ms-5 ps-5 mt-5">
+            
+            <div class="col-md-3 ms-5">
+                <div class="card kard hover1">
+                    <img src="https://b.zmtcdn.com/data/pictures/7/18586207/5b07cc69cf7d348dcbc120fb0f7f05bf_featured_v2.jpg" alt="" height="220px">
+                    <div class="card-body">
+                        <div class="card-title">
+                            Ironhill Bengaluru<button type="button" class="btn btn-sm btn-success" style="margin-left: 100px;" >4.4</button>
+                        </div>
+                        <div class="card-text">
+                            American, Pizza, Europe.. <span class="price">₹1,800 for two</span>
+                            <div class="address"> Marthahalli, Bangalore</div>
+                            <span class="time"> Opens at 12noon</span> <span class="distance">11.5 km</span>
+                        </div>
+                    </div>
+                       
+                    
+                </div>
+            </div>
+            <div class="col-md-3 ms-5 ps-2">
+                <div class="card kard hover1">
+                    <img src="https://b.zmtcdn.com/data/pictures/chains/9/59139/25fa180c93a4e592ce9563607e84a0c5_featured_v2.jpg" alt="" height="220px">
+                    <div class="card-body">
+                        <div class="card-title">
+                            SkyDeck By Sherlock's<button type="button" class="btn btn-sm btn-success"  style="margin-left: 60px;" >4.0</button>
+                        </div>
+                        <div class="card-text">
+                            American, Pizza, Europe.. <span class="price">₹1,800 for two</span>
+                            <div class="address"> MG Road, Bangalore</div>
+                            <span class="time"> Opens at 1 noon</span> <span class="distance">1.5 km</span>
+                        </div>
+                    </div>
+                       
+                    
+                </div>
+            </div>
+            <div class="col-md-3 ms-5 ps-2">
+                <div class="card kard hover1">
+                    <img src="https://b.zmtcdn.com/data/pictures/3/19122613/167c2532b0047806fe7049bb2e95f747_featured_v2.jpg" alt="" height="218px">
+                    <div class="card-body">
+                        <div class="card-title">
+                            The Bier Library <button type="button" class="btn btn-sm btn-success">4.3</button>
+                        </div>
+                        <div class="card-text">
+                            American, Pizza, Europe.. <span class="price">₹1,800 for two</span>
+                            <div class="address"> Koramangala 6th Block, Bangalore</div>
+                            <span class="time"> Opens at 12noon</span> <span class="distance">5 km</span>
+                        </div>
+                    </div>
+                       
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- -----------------------------5th row------------------------------- -->
+        <div class="row ms-5 ps-5 mt-5">
+            
+            <div class="col-md-3 ms-5">
+                <div class="card kard hover1">
+                    <img src="https://b.zmtcdn.com/data/pictures/2/20810972/2b610e594839eafe6bfa16ba489e25ee_featured_v2.jpg" alt="" height="220px">
+                    <div class="card-body">
+                        <div class="card-title">
+                            Geometry Brewery & Kitchen<button type="button" class="btn btn-sm btn-success ms-1">4.2</button>
+                        </div>
+                        <div class="card-text">
+                            American, Pizza, Europe.. <span class="price">₹1,800 for two</span>
+                            <div class="address">MG Road, Bangalore</div>
+                            <span class="time"> Opens at 11:30am</span> <span class="distance">1.5 km</span>
+                        </div>
+                    </div>
+                       
+                    
+                </div>
+            </div>
+            <div class="col-md-3 ms-5 ps-2">
+                <div class="card kard hover1">
+                    <img src="https://b.zmtcdn.com/data/pictures/5/51705/4435124b77f1454e32e24f54c101bbda_featured_v2.jpg" alt="" height="220px">
+                    <div class="card-body">
+                        <div class="card-title">
+                            Mykos Craft Kitchen & Bar<button type="button" class="btn btn-sm btn-success ms-4">4.7</button>
+                        </div>
+                        <div class="card-text">
+                            American, Pizza, Europe.. <span class="price">₹1,800 for two</span>
+                            <div class="address"> Koramangala 6th Block, Bangalore</div>
+                            <span class="time"> Opens at 12noon</span> <span class="distance">5 km</span>
+                        </div>
+                    </div>
+                       
+                    
+                </div>
+            </div>
+            <div class="col-md-3 ms-5 ps-2">
+                <div class="card kard hover1">
+                    <img src="https://b.zmtcdn.com/data/pictures/1/19288221/458ab5ab710d262c4935b7671695f507_featured_v2.jpg" alt="" height="218px">
+                    <div class="card-body">
+                        <div class="card-title">
+                            Kari Theory - Namma Bar & K..<button type="button" class="btn btn-sm btn-success ms-0">4.2</button>
+                        </div>
+                        <div class="card-text">
+                            American, Pizza, Europe.. <span class="price">₹1,800 for two</span>
+                            <div class="address"> Koramangala 6th Block, Bangalore</div>
+                            <span class="time"> Opens at 12noon</span> <span class="distance">5 km</span>
+                        </div>
+                    </div>
+                       
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- --------------------------6th row--------------------------- -->
+        <div class="row ms-5 ps-5 my-5">
+            
+            <div class="col-md-3 ms-5">
+                <div class="card kard hover1">
+                    <img src="https://b.zmtcdn.com/data/pictures/3/52053/d4999878017f6fb96b8e81d1c96af4cb_featured_v2.jpg" alt="" height="220px">
+                    <div class="card-body">
+                        <div class="card-title">
+                            Stories Brewery & Kitchen<button type="button" class="btn btn-sm btn-success ms-4">4.2</button>
+                        </div>
+                        <div class="card-text">
+                            American, Pizza, Europe.. <span class="price">₹1,800 for two</span>
+                            <div class="address"> Koramangala 6th Block, Bangalore</div>
+                            <span class="time"> Opens at 12noon</span> <span class="distance">5 km</span>
+                        </div>
+                    </div>
+                       
+                    
+                </div>
+            </div>
+            <div class="col-md-3 ms-5 ps-2">
+                <div class="card kard hover1">
+                    <img src="https://b.zmtcdn.com/data/pictures/6/18727906/7f280675ab76dc8f666a207d64e2e993_featured_v2.jpg" alt="" height="220px">
+                    <div class="card-body">
+                        <div class="card-title">
+                            The Bier Library <button type="button" class="btn btn-sm btn-success">4.3</button>
+                        </div>
+                        <div class="card-text">
+                            American, Pizza, Europe.. <span class="price">₹1,800 for two</span>
+                            <div class="address"> Koramangala 6th Block, Bangalore</div>
+                            <span class="time"> Opens at 12noon</span> <span class="distance">5 km</span>
+                        </div>
+                    </div>
+                       
+                    
+                </div>
+            </div>
+            <div class="col-md-3 ms-5 ps-2">
+                <div class="card kard hover1">
+                    <img src="https://b.zmtcdn.com/data/pictures/1/19614701/ee1a664e240e7040e4c19a5505954e25_featured_v2.jpg" alt="" height="218px">
+                    <div class="card-body">
+                        <div class="card-title">
+                            Ambedo Kitchen|Taproom<button type="button" class="btn btn-sm btn-success ms-4">4.3</button>
+                        </div>
+                        <div class="card-text">
+                            American, Pizza, Europe.. <span class="price">₹1,800 for two</span>
+                            <div class="address"> Koramangala 6th Block, Bangalore</div>
+                            <span class="time"> Opens at 12noon</span> <span class="distance">5 km</span>
+                        </div>
+                    </div>
+                       
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="accordion" id="faqs">
+        <div class="accordion-item ">
+          <div class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#body1" >
+              <p class="h2 text-dark ">Popular cuisines near me</p>
+            </button>
+          </div>
+          <div id="body1" class="accordion-collapse collapse" data-bs-parent="#faqs">
+            <div class="accordion-body ">
+              <p class="lead">Beverages food near me Biryani food near me Burger food near me Chinese food near me   Continental food near me Desserts food near me Ice Cream food near me Italian food near me Juices food near me Kebab food near me Mughlai food near me North Indian food near me Pizza food near me Rolls food near me Sandwich food near me Seafood food near me Shake food near me Sichuan food near me South Indian food near me Street food near me</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#body2" >
+                <p class="h2 text-dark   ">Popular restaurant types near me</p>
+              </button>
+            </div>
+            <div id="body2" class="accordion-collapse collapse" data-bs-parent="#faqs">
+              <div class="accordion-body">
+                <p class="lead">Bakeries near me Bars near me Beverage Shops near me Bhojanalya near me Cafés near me Casual Dining near me Clubs near me Cocktail Bars near me Confectioneries near me Dessert Parlors near me Dhabas near me Fine Dining near me Food Courts near me Food Trucks near me Irani Cafes near me Kiosks near me Lounges near me Micro breweries near me Paan Shop near me Pubs near me Quick Bites near me Sweet Shops near me</p>
+              </div>
+            </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#body3" >
+                        <p class="h2 text-dark  ">Cities We Deliver To</p>
+                      </button>
+                    </div>
+                    <div id="body3" class="accordion-collapse collapse" data-bs-parent="#faqs">
+                      <div class="accordion-body">
+                        <p class="lead">Delhi NCR Kolkata Mumbai Bengaluru Pune Hyderabad Chennai Lucknow Kochi Jaipur Ahmedabad Chandigar hGoa Indore Gangtok Nashik Ooty Shimla Ludhiana Guwahati Amritsar Kanpur Allahabad Aurangabad Bhopal Ranchi Visakhapatnam Bhubaneswar Coimbatore Mangalore Vadodara Nagpur Agra Dehradun Mysore</p>
+                      </div>
+                    </div>
+                </div>
+                </div>
+    <div class="foot">
+        <div class="footq"> <img src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png?fit=around|198:42&crop=198:42;*,*" alt=""><div class="foot-1"><div>ABOUT ZOMATO</div>
+            <div class="fw-light">Who We Are</div>
+            
+            <div class="fw-light">Blog </div>
+            
+            <div class="fw-light">Work With Us </div>
+            
+            <div class="fw-light">Investor Relations </div>
+            
+            <div  class="fw-light">Report Fraud </div>
+            
+            <div  class="fw-light">Press Kit  </div>
+            
+            <div  class="fw-light">Contact Us</div></div></div>
+            <div class="foot-2">
+               <div> ZOMAVERSE</div>
+            <div  class="fw-light"> Zomato</div>
+            
+        <div  class="fw-light">  Blinkit</div>
+            
+    <div  class="fw-light"> Feeding India</div>
+            
+<div  class="fw-light"> Hyperpure</div>
+
+            
+               <div  class="fw-light"> Zomaland</div>
+            </div>
+            <div class="foot-3">
+                <div>Learn more</div>
+            <div  class="fw-light">Privacy</div>
+                
+            <div  class="fw-light">Security</div>
+                
+            <div class="fw-light">Terms</div>
+            <div class="fw-light">sitemap</div>
+                </div>
+                <div class="foot-2">
+                    <div> ZOMAVERSE</div>
+                 <div  class="fw-light"> Zomato</div>
+                 
+             <div  class="fw-light">  Blinkit</div>
+                 
+         <div  class="fw-light"> Feeding India</div>
+                 
+     <div  class="fw-light"> Hyperpure</div>
+     
+                 
+                    <div  class="fw-light"> Zomaland</div>
+                 </div>
+                 <div class="butto">
+                    <button type="button"><i class="fa-solid fa-flag"></i> India</button>
+                    <button type="button"><i class="fa-solid fa-globe"></i> English</button>
+                    <div class="mt-4 ms-5">Social links
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com" class=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com" class="ms-3"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.twitter.com" class="ms-3"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="https://www.in.linkedin.com" class="ms-3"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                 </div>
+                </div>
+                
+                
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+                    crossorigin="anonymous"></script>
+                </body>
+                
+                </html>
